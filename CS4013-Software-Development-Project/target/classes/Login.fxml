@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:controller="com.mycompany.payrollsystem.system.javafx.LoginController"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #17202a;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#ecf0f1" layoutX="420.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PayRollSystem!">
+         <font>
+            <Font name="Avenir Roman" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#ecf0f1" layoutX="439.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#ecf0f1" layoutX="410.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your role:">
+         <font>
+            <Font name="Avenir Roman" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#b3b6b7" layoutX="374.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Object Oriented Development Project 2024">
+         <font>
+            <Font name="Avenir Roman" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="roleComboBox" layoutX="437.0" layoutY="371.0" prefWidth="150.0" promptText="Your role">
+      </ComboBox>
+      <TextField fx:id="usernameField" layoutX="437.0" layoutY="410.0" prefWidth="150.0" promptText="Username"/>
+      <PasswordField fx:id="passwordField" layoutX="437.0" layoutY="450.0" prefWidth="150.0" promptText="Password"/>
+      <Button fx:id="loginButton" layoutX="437.0" layoutY="490.0" text="Login" onAction="#handleLogin"/>
+   </children>
+</AnchorPane>

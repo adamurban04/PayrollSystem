@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.payrollsystem.system.javafx.AdminController">
+    <Label text="Add Staff" />
+    <TextField fx:id="nameField" promptText="Staff Name" />
+    <TextField fx:id="idField" promptText="Staff ID" />
+    <TextField fx:id="titleField" promptText="Staff Title" />
+    <TextField fx:id="scalePointField" promptText="Scale Point" />
+    <TextField fx:id="passwordField" promptText="Password" />
+
+    <Button fx:id="addButton" text="Add Staff" onAction="#handleAddStaff" />
+    <Button fx:id="viewButton" text="View Staff" onAction="#handleViewStaff" />
+</VBox>
